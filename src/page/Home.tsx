@@ -111,7 +111,7 @@ function Home() {
   return (
     <div className=" mt-12">
       <ToastContainer />
-      <div className="flex flex-col-3 px-2">
+      <div className="flex flex-col-3">
         <ExpCard earn="Earn per tap" color="#F39E09" profit="+8" flag={true} />
         <ExpCard
           earn="Coins to level up"
@@ -143,7 +143,7 @@ function Home() {
         </div>
         <div>
           <div
-            className={`relative bg-[url('/image/mikeToken.png')] rounded-full bg-cover w-[400px] h-[400px] max-sm:w-[280px] max-sm:h-[280px] z-10 ${
+            className={`relative bg-[url('/image/mikeToken.png')] rounded-full bg-cover w-[400px] h-[400px] max-sm:w-[330px] max-sm:h-[330px] z-10 ${
               remainedEnergy > 0
                 ? "cursor-pointer"
                 : "cursor-not-allowed opacity-50"

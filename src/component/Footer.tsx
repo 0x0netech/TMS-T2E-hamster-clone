@@ -9,37 +9,61 @@ export default function Footer() {
     setPath(location.pathname);
   }, [location]);
   return (
-    <div className="grid grid-cols-3 gap-10 justify-center items-center mt-10">
+    <div className="grid grid-cols-5 gap-5 justify-center items-center bg-[#272A30] p-4 rounded-xl">
       <Link
-        to="/ranking"
+        to=""
         className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
-          path === "/ranking"
-            ? "scale-[110%] opacity-100"
+          path === "/"
+            ? "scale-[110%] opacity-100 bg-[#1B1F24] p-2 rounded-2xl"
             : "opacity-50 text-white"
         }`}
       >
-        <img src="/image/ranking.png" alt="ranking" className="w-12 h-12" />
-        <p className="text-sm max-sm:text-sm text-white">RANKING</p>
+        <img src="/image/mining.png" alt="play" className="w-8 h-8" />
+        <p className="text-sm max-sm:text-[10px] text-white">Exchange</p>
       </Link>
       <Link
         to=""
         className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
-          path === "/" ? "scale-[110%] opacity-100" : "opacity-50 text-white"
+          path === "/mine"
+            ? "scale-[110%] opacity-100 bg-[#1B1F24] p-2 rounded-2xl"
+            : "opacity-50 text-white"
         }`}
       >
-        <img src="/image/mining.png" alt="play" className="w-12 h-12" />
-        <p className="text-sm max-sm:text-sm text-white">Mint</p>
+        <img src="/image/axs.png" alt="play" className="w-8 h-8" />
+        <p className="text-sm max-sm:text-[10px] text-white">Mine</p>
+      </Link>
+      <Link
+        to=""
+        className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
+          path === "/friends"
+            ? "scale-[110%] opacity-100 bg-[#1B1F24] p-2 rounded-2xl"
+            : "opacity-50 text-white"
+        }`}
+      >
+        <img src="/image/friends.png" alt="play" className="w-8 h-8" />
+        <p className="text-sm max-sm:text-[10px] text-white">Friends</p>
       </Link>
       <Link
         to="/quest"
         className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
           path === "/quest"
-            ? "scale-[110%] opacity-100"
+            ? "scale-[110%] opacity-100  bg-[#1B1F24] p-2 rounded-2xl"
             : "opacity-50 text-white"
         }`}
       >
-        <img src="/image/quest.png" alt="quest" className="w-12 h-12" />
-        <p className="text-sm max-sm:text-sm text-white">QUEST</p>
+        <img src="/image/earn.png" alt="ranking" className="w-8 h-8" />
+        <p className="text-sm max-sm:text-[10px] text-white">Earn</p>
+      </Link>
+      <Link
+        to="/airdrop"
+        className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
+          path === "/airdrop"
+            ? "scale-[110%] opacity-100  bg-[#1B1F24] p-2 rounded-2xl"
+            : "opacity-50 text-white"
+        }`}
+      >
+        <img src="/image/airdrop.png" alt="quest" className="w-8 h-8" />
+        <p className="text-sm max-sm:text-[10px] text-white">Airdrop</p>
       </Link>
     </div>
   );

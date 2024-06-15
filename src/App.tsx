@@ -9,7 +9,7 @@ import Footer from "./component/Footer";
 import Layout from "./Layout";
 import Loading from "./component/Loading";
 import { Provider as ReduxProvider } from "react-redux";
-import {store} from "./store";
+import { store } from "./store";
 import Boost from "./page/Boost";
 function App() {
   const [loading, setLoading] = useState(false);
@@ -17,21 +17,21 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 7000);
+    }, 3000);
   }, []);
   return (
     <Router>
       {loading ? (
         <Loading />
       ) : (
-        <div className="App w-[700px] h-[75vh] max-sm:w-[750px] max-sm:h-[70vh]">
+        <div className="App flex flex-col justify-between w-[700px] h-[100vh] max-sm:w-[750px] px-4">
           <ReduxProvider store={store}>
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="ranking" element={<Ranking />} />
                 <Route path="quest" element={<Quest />} />
-                <Route path="boost" element = {<Boost/>} />
+                <Route path="boost" element={<Boost />} />
               </Route>
             </Routes>
             <ToastContainer />
