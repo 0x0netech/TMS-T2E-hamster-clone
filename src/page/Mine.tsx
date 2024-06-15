@@ -4,6 +4,7 @@
 import { ToastContainer } from "react-toastify";
 import AnaylsisCard from "../component/section/AnalysisCard";
 import DailyCard from "../component/DailyCard";
+import TimeText from "../component/TimeText";
 import "react-toastify/dist/ReactToastify.css";
 // import CountDate from "../component/CountDate";
 // import ProgressBar from "../component/ProgressBar";
@@ -124,6 +125,7 @@ function Mine() {
               {formatNumberWithCommas(680432)}
             </h1>
           </div>
+          <TimeText />
           <DailyCard />
           {/* <div className="w-full">
             <ProgressBar value={remainedEnergy / 10} />
