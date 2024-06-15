@@ -25,7 +25,7 @@ function App() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="App flex flex-col justify-between w-[700px] h-[100vh] max-sm:w-[750px] px-4">
+        <div className="App flex flex-col justify-between w-[700px] max-sm:w-[750px] px-4">
           <ReduxProvider store={store}>
             <Routes>
               <Route path="/" element={<Layout />}>

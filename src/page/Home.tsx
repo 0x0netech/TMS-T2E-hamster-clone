@@ -112,16 +112,16 @@ function Home() {
     <div className=" mt-12">
       <ToastContainer />
       <div className="flex flex-col-3">
-        <ExpCard earn="Earn per tap" color="#F39E09" profit="+8" flag={true} />
+        <ExpCard earn="Earn per tap" profit="+8" flag={true} />
         <ExpCard
           earn="Coins to level up"
-          color="#B7A0DC"
+          // color="#B7A0DC"
           profit="1M"
           flag={false}
         />
         <ExpCard
           earn="Profit per hour"
-          color="#F39E09"
+          // color="#F39E09"
           profit="+612.15K"
           flag={false}
         />
