@@ -2,9 +2,10 @@
 // import { useEffect } from "react";
 // import { Link } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import AnaylsisCard from "../component/section/AnalysisCard";
+import DailyCard from "../component/DailyCard";
 import "react-toastify/dist/ReactToastify.css";
 // import CountDate from "../component/CountDate";
-import ExpCard from "../component/Card";
 // import ProgressBar from "../component/ProgressBar";
 // import { useSelector } from "../store";
 //import { insertWallet, updateWallet } from "../store/reducers/wallet";
@@ -111,21 +112,7 @@ function Mine() {
   return (
     <div className=" mt-12">
       <ToastContainer />
-      <div className="flex flex-col-3">
-        <ExpCard earn="Earn per tap" profit="+8" flag={true} />
-        <ExpCard
-          earn="Coins to level up"
-          // color="#B7A0DC"
-          profit="50M"
-          flag={false}
-        />
-        <ExpCard
-          earn="Profit per hour"
-          // color="#F39E09"
-          profit="+612.15K"
-          flag={false}
-        />
-      </div>
+      <AnaylsisCard />
       <div
         id="mainWindow"
         className="relative mt-2 flex flex-col items-center justify-center w-full"
@@ -137,6 +124,7 @@ function Mine() {
               {formatNumberWithCommas(680432)}
             </h1>
           </div>
+          <DailyCard />
           {/* <div className="w-full">
             <ProgressBar value={remainedEnergy / 10} />
           </div> */}
