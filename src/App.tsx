@@ -11,6 +11,7 @@ import Loading from "./component/Loading";
 import { Provider as ReduxProvider } from "react-redux";
 import { store } from "./store";
 import Boost from "./page/Boost";
+import Mine from "./page/Mine";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
                 <Route path="ranking" element={<Ranking />} />
                 <Route path="quest" element={<Quest />} />
                 <Route path="boost" element={<Boost />} />
+                <Route path="mine" element={<Mine />} />
               </Route>
             </Routes>
             <ToastContainer />
