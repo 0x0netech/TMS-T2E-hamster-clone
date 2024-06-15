@@ -3,7 +3,8 @@ import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import CountDate from "../component/CountDate";
+// import CountDate from "../component/CountDate";
+import ExpCard from "../component/Card";
 import ProgressBar from "../component/ProgressBar";
 import { useSelector } from "../store";
 //import { insertWallet, updateWallet } from "../store/reducers/wallet";
@@ -44,7 +45,7 @@ function Home() {
 
     const newDiv = document.createElement("div");
     newDiv.textContent = `${score}`;
-    newDiv.style.backgroundImage = "url('image/dollar.png')";
+    // newDiv.style.backgroundImage = "url('image/dollar.png')";
     newDiv.style.backgroundRepeat = "no-repeat";
     newDiv.style.backgroundPosition = "center";
     newDiv.style.fontSize = "30px";
@@ -54,7 +55,7 @@ function Home() {
     newDiv.style.alignItems = "center";
     newDiv.style.backgroundSize = "cover";
     newDiv.style.width = "40px";
-    newDiv.style.height = "40px";
+    newDiv.style.height = "140px";
     newDiv.style.position = "absolute";
     newDiv.style.left = `${x + 50}px`;
     newDiv.style.top = `${y}px`;
@@ -110,23 +111,37 @@ function Home() {
   return (
     <div className=" mt-12">
       <ToastContainer />
-      <CountDate date={3} />
+      <div className="flex flex-col-3">
+        <ExpCard earn="Earn per tap" color="#F39E09" profit="+8" flag={true} />
+        <ExpCard
+          earn="Coins to level up"
+          color="#B7A0DC"
+          profit="1M"
+          flag={false}
+        />
+        <ExpCard
+          earn="Profit per hour"
+          color="#F39E09"
+          profit="+8"
+          flag={true}
+        />
+      </div>
       <div
         id="mainWindow"
-        className="relative mt-5 flex flex-col items-center justify-center w-full h-[60vh] mb-9"
+        className="relative mt-2 flex flex-col items-center justify-center w-full"
       >
-        <div className="flex flex-col justify-center items-center mb-7">
-          <h3 className="text-xl font-bold text-[#939392]">$GoXP balance</h3>
-          <h1 className="text-5xl text-white">
-            {formatNumberWithCommas(token)}
-          </h1>
+        <div className="flex flex-col justify-center items-center mb-7 gap-2 w-full">
+          <div className="flex flex-row justify-center items-center mt-4">
+            <img src="/image/dollar.png" alt="" className="w-14 h-14 mt-1" />
+            <h1 className="text-5xl text-white ml-3 font-bold">
+              {formatNumberWithCommas(token)}
+            </h1>
+          </div>
+          <div className="w-full">
+            <ProgressBar value={remainedEnergy / 10} />
+          </div>
         </div>
         <div>
-          <img
-            src="/image/shape.png"
-            alt=""
-            className="absolute z-10 left-0 top-[-50px]"
-          />
           <div
             className={`relative bg-[url('/image/mikeToken.png')] rounded-full bg-cover w-[400px] h-[400px] max-sm:w-[280px] max-sm:h-[280px] z-10 ${
               remainedEnergy > 0
@@ -139,9 +154,9 @@ function Home() {
             onClick={handleTap}
           />
         </div>
-        <div className="flex flex-col justify-center items-center content-center ">
-          <div className="flex justify-around w-full align-middle gap-5">
-            <h3 className="text-2xl mb-2 text-white w-[15vw]">
+        <div className="flex flex-row justify-between w-full px-10">
+          <div className="flex justify-between gap-5 w-full">
+            <h3 className="text-2xl mb-2 text-white flex flex-row">
               <span className="text-3xl ">
                 <img
                   src="/image/icon/lightning.svg"
@@ -149,17 +164,17 @@ function Home() {
                   className="w-6 h-6 inline"
                 />
               </span>
-              <span className="text-xl text-white">{remainedEnergy}</span> /1000
+              <span className="text-2xl text-white">{remainedEnergy}</span>{" "}
+              /1000
             </h3>
-            <ProgressBar value={remainedEnergy / 10} />
-            <div className="flex justify-center align-middle w-[15vw]">
+            <div className="flex justify-center align-middle">
               <Link to="/boost" className="flex">
                 <img
                   src="/image/rocket.png"
                   alt="rocket"
                   className="w-8 h-8 inline"
                 />
-                <h3 className="text-xl text-white">Boost</h3>
+                <h3 className="text-2xl text-white">Boost</h3>
               </Link>
             </div>
           </div>

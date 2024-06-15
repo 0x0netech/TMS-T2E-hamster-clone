@@ -9,9 +9,7 @@ export default function Footer() {
     setPath(location.pathname);
   }, [location]);
   return (
-    <div
-      className="grid grid-cols-3 gap-10 justify-center items-center"
-    >
+    <div className="grid grid-cols-3 gap-10 justify-center items-center mt-10">
       <Link
         to="/ranking"
         className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
