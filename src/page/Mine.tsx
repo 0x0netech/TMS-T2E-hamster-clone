@@ -7,6 +7,7 @@ import DailyCard from "../component/DailyCard";
 import TimeText from "../component/TimeText";
 import "react-toastify/dist/ReactToastify.css";
 import ComboCard from "../component/section/ComboCard";
+import {useState } from "react";
 // import CountDate from "../component/CountDate";
 // import ProgressBar from "../component/ProgressBar";
 // import { useSelector } from "../store";
@@ -110,7 +111,7 @@ function Mine() {
   //   setImgStatus(false);
   // };
   // console.log("imgStatus", imgStatus);
-
+  const [tab, setTab] = useState<number>(1);
   return (
     <div className=" mt-12">
       <ToastContainer />
@@ -132,6 +133,48 @@ function Mine() {
             <ComboCard image="/image/com_3.png" content="Top 10 pairs" />
             <ComboCard image="/image/mikeT.png" content="Security Audition" />
             <ComboCard image="/image/com_1.png" content="Licence Ethiopia" />
+          </div>
+          <div className="grid grid-cols-4 gap-10 justify-center items-center bg-[#272A30] py-2 px-4 rounded-xl w-full">
+            <div
+              className={` cursor-pointer transform origin-bottom transition ${
+                tab === 1
+                  ? "scale-[110%] opacity-100 bg-[#1B1F24] p-2 rounded-lg"
+                  : "opacity-50 text-white"
+              }`}
+              onClick={() => setTab(1)}
+            >
+              <p className="text-sm text-white">Markets</p>
+            </div>
+            <div
+              className={`cursor-pointer transform origin-bottom transition ${
+                tab === 2
+                  ? "scale-[110%] opacity-100 bg-[#1B1F24] p-2 rounded-lg"
+                  : "opacity-50 text-white"
+              }`}
+              onClick={() => setTab(2)}
+            >
+              <p className="text-sm  text-white">PR&Team</p>
+            </div>
+            <div
+              className={` cursor-pointer transform origin-bottom transition ${
+                tab === 3
+                  ? "scale-[110%] opacity-100 bg-[#1B1F24] p-2 rounded-lg"
+                  : "opacity-50 text-white"
+              }`}
+              onClick={() => setTab(3)}
+            >
+              <p className="text-sm  text-white">Legal</p>
+            </div>
+            <div
+              className={` cursor-pointer transform origin-bottom transition ${
+                tab === 4
+                  ? "scale-[110%] opacity-100  bg-[#1B1F24] p-2 rounded-lg"
+                  : "opacity-50 text-white"
+              }`}
+              onClick={() => setTab(4)}
+            >
+              <p className="text-sm  text-white">Specials</p>
+            </div>
           </div>
           {/* <div className="w-full">
             <ProgressBar value={remainedEnergy / 10} />
