@@ -11,8 +11,8 @@ const TokenCard: React.FC<TokenCardProps> = ({
   revune,
 }) => {
   return (
-    <div className="w-full rounded-lg transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0 -8px 0px 0px #2196f3] bg-[#272A30] h-[150px]">
-      <div className="flex grid-cols-2 p-2">
+    <div className="w-full rounded-lg transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0 -8px 0px 0px #2196f3] bg-[#272A30] py-2">
+      <div className="flex grid-cols-2 px-2">
         <div className="mx-auto my-auto min-w-16">
           <img src={image} alt="iamge" className="w-[60px] h-[60px]" />
         </div>
