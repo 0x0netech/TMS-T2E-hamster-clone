@@ -1,22 +1,19 @@
-import ExpCard from "../Card";
-const AnaylsisCard = () => {
+interface ComboCardProps {
+  image: string;
+  content: string;
+}
+const ComboCard: React.FC<ComboCardProps> = ({ image, content }) => {
   return (
-    <div className="flex flex-col-3">
-      <ExpCard earn="Earn per tap" profit="+8" flag={true} />
-      <ExpCard
-        earn="Coins to level up"
-        // color="#B7A0DC"
-        profit="1M"
-        flag={false}
-      />
-      <ExpCard
-        earn="Profit per hour"
-        // color="#F39E09"
-        profit="+612.15K"
-        flag={false}
-      />
+    <div className="group w-full rounded-lg bg-gradient-to-b from-pink-50 to-indigo-600 pt-[1px] pr-[1px] pl-[1px]">
+      <div className="group w-full rounded-lg bg-[#272A30] p-2">
+        <div className="flex flex-row justify-center align-middle pt-2">
+          <img src={image} alt="iamge" className="w-[70px] h-[70px]" />
+        </div>
+        <p className="text-sm md:text-lg text-white pt-4 ">{content}</p>
+      </div>
     </div>
   );
 };
 
-export default AnaylsisCard;
+export default ComboCard;
+// bg-[#272A30]

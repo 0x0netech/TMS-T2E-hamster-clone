@@ -6,6 +6,7 @@ import AnaylsisCard from "../component/section/AnalysisCard";
 import DailyCard from "../component/DailyCard";
 import TimeText from "../component/TimeText";
 import "react-toastify/dist/ReactToastify.css";
+import ComboCard from "../component/section/ComboCard";
 // import CountDate from "../component/CountDate";
 // import ProgressBar from "../component/ProgressBar";
 // import { useSelector } from "../store";
@@ -127,6 +128,11 @@ function Mine() {
           </div>
           <TimeText />
           <DailyCard />
+          <div className="grid grid-cols-3 w-full py-4 gap-4">
+            <ComboCard image="/image/com_3.png" content="Top 10 pairs" />
+            <ComboCard image="/image/mikeT.png" content="Security Audition" />
+            <ComboCard image="/image/com_1.png" content="Licence Ethiopia" />
+          </div>
           {/* <div className="w-full">
             <ProgressBar value={remainedEnergy / 10} />
           </div> */}
