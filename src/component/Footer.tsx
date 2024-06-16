@@ -44,9 +44,9 @@ export default function Footer() {
         <p className="text-sm max-sm:text-[10px] text-white">Friends</p>
       </Link>
       <Link
-        to="/quest"
+        to="/earn"
         className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
-          path === "/quest"
+          path === "/earn"
             ? "scale-[110%] opacity-100  bg-[#1B1F24] p-2 rounded-2xl"
             : "opacity-50 text-white"
         }`}

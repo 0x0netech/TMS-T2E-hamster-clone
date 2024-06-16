@@ -13,6 +13,7 @@ import { store } from "./store";
 import Boost from "./page/Boost";
 import Mine from "./page/Mine";
 import Friends from "./page/Friends";
+import Earn from "./page/Earn";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
                 <Route path="boost" element={<Boost />} />
                 <Route path="mine" element={<Mine />} />
                 <Route path="friends" element={<Friends />} />
+                <Route path="earn" element={<Earn />} />
               </Route>
             </Routes>
             <ToastContainer />
