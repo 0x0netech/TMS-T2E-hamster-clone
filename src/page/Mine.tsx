@@ -114,7 +114,7 @@ function Mine() {
   // console.log("imgStatus", imgStatus);
   const [tab, setTab] = useState<number>(1);
   return (
-    <div className=" mt-12">
+    <div className=" mt-12 px-4">
       <ToastContainer />
       <AnaylsisCard />
       <div

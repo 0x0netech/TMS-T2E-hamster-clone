@@ -12,6 +12,7 @@ import { Provider as ReduxProvider } from "react-redux";
 import { store } from "./store";
 import Boost from "./page/Boost";
 import Mine from "./page/Mine";
+import Friends from "./page/Friends";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -25,7 +26,7 @@ function App() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="App flex flex-col justify-between w-[700px] max-sm:w-[750px] px-4 bg-[#1B1F24]">
+        <div className="App flex flex-col justify-between w-[700px] max-sm:w-[750px] bg-[#1B1F24]">
           <ReduxProvider store={store}>
             <Routes>
               <Route path="/" element={<Layout />}>
@@ -34,6 +35,7 @@ function App() {
                 <Route path="quest" element={<Quest />} />
                 <Route path="boost" element={<Boost />} />
                 <Route path="mine" element={<Mine />} />
+                <Route path="friends" element={<Friends />} />
               </Route>
             </Routes>
             <ToastContainer />

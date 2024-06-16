@@ -33,7 +33,7 @@ export default function Footer() {
         <p className="text-sm max-sm:text-[10px] text-white">Mine</p>
       </Link>
       <Link
-        to=""
+        to="/friends"
         className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
           path === "/friends"
             ? "scale-[110%] opacity-100 bg-[#1B1F24] p-2 rounded-2xl"
