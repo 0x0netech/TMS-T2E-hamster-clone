@@ -9,7 +9,7 @@ export default function Footer() {
     setPath(location.pathname);
   }, [location]);
   return (
-    <div className="grid grid-cols-5 gap-5 justify-center items-center bg-[#272A30] p-4 rounded-xl mt-16">
+    <div className="grid grid-cols-5 gap-5 justify-center items-center bg-[#272A30] p-4 rounded-xl">
       <Link
         to=""
         className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
