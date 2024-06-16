@@ -26,7 +26,7 @@ const EarnCard: React.FC<EarnCardProps> = ({ title, image, flag, profit }) => {
               {flag === true ? (
                 <img src="/image/tick.png" alt="" className="w-8 h-8 ml-1" />
               ) : (
-                <img src="/image/fail.png" alt="" className="w-8 h-8 ml-1" />
+                <></>
               )}
             </div>
           </div>

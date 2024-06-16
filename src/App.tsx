@@ -14,6 +14,8 @@ import Boost from "./page/Boost";
 import Mine from "./page/Mine";
 import Friends from "./page/Friends";
 import Earn from "./page/Earn";
+import Airdrop from "./page/AirDrop";
+
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -38,6 +40,7 @@ function App() {
                 <Route path="mine" element={<Mine />} />
                 <Route path="friends" element={<Friends />} />
                 <Route path="earn" element={<Earn />} />
+                <Route path="airdrop" element={<Airdrop />} />
               </Route>
             </Routes>
             <ToastContainer />

@@ -55,14 +55,14 @@ export default function Footer() {
         <p className="text-sm max-sm:text-[10px] text-white">Earn</p>
       </Link>
       <Link
-        to="/ranking"
+        to="/airdrop"
         className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
           path === "/airdrop"
             ? "scale-[110%] opacity-100  bg-[#1B1F24] p-2 rounded-2xl"
             : "opacity-50 text-white"
         }`}
       >
-        <img src="/image/airdrop.png" alt="quest" className="w-8 h-8" />
+        <img src="/image/hamstercoin.png" alt="quest" className="w-10 h-10" />
         <p className="text-sm max-sm:text-[10px] text-white">Airdrop</p>
       </Link>
     </div>
