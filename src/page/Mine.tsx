@@ -7,7 +7,8 @@ import DailyCard from "../component/DailyCard";
 import TimeText from "../component/TimeText";
 import "react-toastify/dist/ReactToastify.css";
 import ComboCard from "../component/section/ComboCard";
-import {useState } from "react";
+import Markets from "../component/section/Markets";
+import { useState } from "react";
 // import CountDate from "../component/CountDate";
 // import ProgressBar from "../component/ProgressBar";
 // import { useSelector } from "../store";
@@ -176,6 +177,7 @@ function Mine() {
               <p className="text-sm  text-white">Specials</p>
             </div>
           </div>
+          <div className="w-full">{tab === 1 && <Markets />}</div>
           {/* <div className="w-full">
             <ProgressBar value={remainedEnergy / 10} />
           </div> */}
