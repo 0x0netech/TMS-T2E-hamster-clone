@@ -9,82 +9,82 @@ export default function Footer() {
     setPath(location.pathname);
   }, [location]);
   return (
-    <div className="w-full fixed mt-[88vh] px-4 max-w-[700px] md:mt-[85vh] z-50">
-      <div className="grid grid-cols-5 gap-1 md:gap-5 justify-center items-center bg-[#272A30] p-3 md:p-4 rounded-3xl w-full border-slate-950 border-2">
+    <div className="w-full fixed mt-[88vh] px-4 max-w-[700px] lg:mt-[85vh] z-50">
+      <div className="grid grid-cols-5 gap-1 lg:gap-5 justify-center items-center bg-[#272A30] p-3 lg:p-4 rounded-3xl w-full border-slate-950 border-2">
         <Link
           to=""
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/"
-              ? "scale-[110%] opacity-100 bg-[#1B1F24] p-1 md:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100 bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >
           <img
             src="/image/mining.png"
             alt="play"
-            className="w-6 h-6 md:w-8 md:h-8"
+            className="w-6 h-6 lg:w-8 lg:h-8"
           />
-          <p className="text-[10px] md:text-sm text-white">Exchange</p>
+          <p className="text-[10px] lg:text-sm text-white">Exchange</p>
         </Link>
         <Link
           to="/mine"
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/mine"
-              ? "scale-[110%] opacity-100 bg-[#1B1F24] p-1 md:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100 bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >
           <img
             src="/image/axs.png"
             alt="play"
-            className="w-6 h-6 md:w-8 md:h-8"
+            className="w-6 h-6 lg:w-8 lg:h-8"
           />
-          <p className="text-[10px] md:text-sm text-white">Mine</p>
+          <p className="text-[10px] lg:text-sm text-white">Mine</p>
         </Link>
         <Link
           to="/friends"
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/friends"
-              ? "scale-[110%] opacity-100 bg-[#1B1F24] p-1 md:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100 bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >
           <img
             src="/image/friends.png"
             alt="play"
-            className="w-6 h-6 md:w-8 md:h-8"
+            className="w-6 h-6 lg:w-8 lg:h-8"
           />
-          <p className="text-[10px] md:text-sm text-white">Friends</p>
+          <p className="text-[10px] lg:text-sm text-white">Friends</p>
         </Link>
         <Link
           to="/earn"
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/earn"
-              ? "scale-[110%] opacity-100  bg-[#1B1F24] p-1 md:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100  bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >
           <img
             src="/image/earn.png"
             alt="ranking"
-            className="w-6 h-6 md:w-8 md:h-8"
+            className="w-6 h-6 lg:w-8 lg:h-8"
           />
-          <p className="text-[10px] md:text-sm text-white">Earn</p>
+          <p className="text-[10px] lg:text-sm text-white">Earn</p>
         </Link>
         <Link
           to="/airdrop"
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/airdrop"
-              ? "scale-[110%] opacity-100  bg-[#1B1F24] p-1 md:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100  bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >
           <img
             src="/image/hamstercoin.png"
             alt="quest"
-            className="w-6 h-6 md:w-8 md:h-8"
+            className="w-6 h-6 lg:w-8 lg:h-8"
           />
-          <p className="text-[10px] md:text-sm text-white">Airdrop</p>
+          <p className="text-[10px] lg:text-sm text-white">Airdrop</p>
         </Link>
       </div>
     </div>

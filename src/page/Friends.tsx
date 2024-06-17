@@ -3,7 +3,9 @@ import FriendCard from "../component/FriendCard";
 const Friends = () => {
   return (
     <div className="py-10 bg-black p-4 min-h-[100vh]">
-      <p className="text-white text-3xl font-bold">Invite Friends!</p>
+      <p className="text-white text-4xl font-bold">
+        Invite Friends!
+      </p>
       <p className="text-white text-xl pt-4 pb-6">
         You and your friend will receive bonuses!
       </p>
@@ -15,7 +17,9 @@ const Friends = () => {
         />
       </div>
       <div>
-        <p className="text-blue-700 text-2xl font-bold">More bonuses</p>
+        <p className="text-blue-700 text-2xl font-bold py-2 md:py-4">
+          More bonuses
+        </p>
       </div>
       <div className="flex flex-row justify-between items-center">
         <p className="text-left py-2 text-white text-xl font-semibold">
