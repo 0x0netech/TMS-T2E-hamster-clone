@@ -57,19 +57,6 @@ const Earn = () => {
           profit="234.3K"
           flag={true}
         />
-        {/* <FriendCard
-          name="Lari0 | FutureValueApp"
-          role="Platium"
-          profit="495.3K"
-          value="+321K"
-        />
-        <FriendCard
-          name="Dan Ber"
-          role="Platium"
-          profit="445.3K"
-          value="+25K"
-        />
-        <FriendCard name="Andria" role="Platium" profit="435.3K" value="+35K" /> */}
       </div>
     </div>
   );

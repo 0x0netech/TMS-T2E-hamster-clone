@@ -3,24 +3,12 @@ import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import CountDate from "../component/CountDate";
 import AnaylsisCard from "../component/section/AnalysisCard";
 import ProgressBar from "../component/ProgressBar";
 import { useSelector } from "../store";
-//import { insertWallet, updateWallet } from "../store/reducers/wallet";
 function Home() {
   const tokenState = useSelector((state) => state.wallet.user?.balance);
-  //const energyState = useSelector((state) => state.wallet.user?.energy);
   const [imgStatus, setImgStatus] = useState(false);
-  /*useEffect(() => {
-    if (address) {
-      dispatch(insertWallet(address));
-    }
-  }, []);*/
-  //useEffect(() => {
-  //setToken(tokenState);
-  //setRemainedEnergy(energyState);
-  //}, [tokenState, energyState, address]);
   const [token, setToken] = useState<number>(tokenState);
   const [remainedEnergy, setRemainedEnergy] = useState<number>(1000);
   function formatNumberWithCommas(number: number, locale = "en-US") {
@@ -70,8 +58,6 @@ function Home() {
   };
 
   useEffect(() => {
-    // const webapp = (window as any).Telegram?.WebApp.initDataUnsafe;
-    // console.log("=========>webapp", webapp);
     const interval = setInterval(() => {
       setRemainedEnergy((pre) =>
         pre == 999 ? 1000 : pre < 1000 ? pre + 1 : 1000
@@ -81,19 +67,13 @@ function Home() {
   }, []);
 
   const handleTap = (event: React.MouseEvent<HTMLDivElement>) => {
-    //if (!address) {
-    //  toast.error("Please connect your wallet first");
-    //  return;
-    //}
     if (remainedEnergy > 0) {
       if (remainedEnergy < 500) {
         setScore("+2");
         setToken(token + 2);
-        //dispatch(updateWallet(address, token + 2, remainedEnergy - 1));
       } else {
         setScore("+1");
         setToken(token + 1);
-        //dispatch(updateWallet(address, token + 1, remainedEnergy - 1));
       }
       setRemainedEnergy(remainedEnergy - 1);
       handleClick(event);
@@ -131,9 +111,9 @@ function Home() {
             <ProgressBar value={remainedEnergy / 10} />
           </div>
         </div>
-        <div>
+        <div className="w-full sm:p-4 md:-6 lg:p-8">
           <div
-            className={`relative bg-[url('/image/mikeToken.png')] rounded-full bg-cover w-[340px] h-[340px] sm:w-[390px] sm:h-[390px] md:w-[460px] md:h-[460px] lg:w-[550px] lg:h-[550px] z-10 ${
+            className={`relative bg-[url('/image/mikeToken.png')] rounded-full bg-cover w-full aspect-square z-10 ${
               remainedEnergy > 0
                 ? "cursor-pointer"
                 : "cursor-not-allowed opacity-50"
@@ -145,7 +125,7 @@ function Home() {
           />
         </div>
         <div className="flex flex-row justify-between w-full px-10 max-sm:px-4 mt-4">
-          <div className="flex justify-between gap-5 w-full">
+          <div className="flex justify-between w-full">
             <h3 className="text-2xl mb-2 text-white flex flex-row">
               <span className="flex text-3xl items-center ">
                 <img
