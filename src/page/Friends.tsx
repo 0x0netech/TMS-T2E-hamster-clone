@@ -2,7 +2,7 @@ import InviteCard from "../component/InviteCard";
 import FriendCard from "../component/FriendCard";
 const Friends = () => {
   return (
-    <div className="py-10 bg-black p-4 min-h-[90vh]">
+    <div className="py-10 bg-black p-4 h-[93.4vh] md:h-[91.1vh]">
       <p className="text-white text-3xl font-bold">Invite Friends!</p>
       <p className="text-white text-xl pt-4 pb-6">
         You and your friend will receive bonuses!
@@ -21,7 +21,11 @@ const Friends = () => {
         <p className="text-left py-2 text-white text-xl font-semibold">
           List of your friends(15)
         </p>
-        <img src="/image/redo.png" alt="" className="w-8 h-8 max-sm:w-4 max-sm:h-4 mt-1" />
+        <img
+          src="/image/redo.png"
+          alt=""
+          className="w-8 h-8 max-sm:w-4 max-sm:h-4 mt-1"
+        />
       </div>
       <div className="mt-3 space-y-2">
         <FriendCard
@@ -36,12 +40,7 @@ const Friends = () => {
           profit="445.3K"
           value="+25K"
         />
-        <FriendCard
-          name="Andria"
-          role="Platium"
-          profit="435.3K"
-          value="+35K"
-        />
+        <FriendCard name="Andria" role="Platium" profit="435.3K" value="+35K" />
       </div>
     </div>
   );

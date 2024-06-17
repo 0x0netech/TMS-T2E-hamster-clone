@@ -12,7 +12,7 @@ const FriendCard: React.FC<FriendCardProps> = ({
 }) => {
   return (
     <div className="grid grid-col-1  grid-col-1 w-full">
-      <div className="group rounded-xl bg-[#272A30] py-4 px-2 sm:p-3 max-sm:py-2 transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0 -8px 0px 0px #2196f3] flex justify-between">
+      <div className="group rounded-xl bg-[#272A30] p-3 sm:p-4 md:p-5 transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0 -8px 0px 0px #2196f3] flex justify-between">
         <div className="flex grid-cols-2 gap-3 w-full">
           <img
             src="/image/hamster.png"
@@ -29,13 +29,13 @@ const FriendCard: React.FC<FriendCardProps> = ({
                 <img
                   src="/image/dollar.png"
                   alt=""
-                  className="w-6 h-6 ml-1 max-sm:w-4 max-sm:h-4"
+                  className="w-4 h-4 ml-1 sm:w-5 sm:h-5 md:w-6 md:h-6"
                 />
                 <p className="text-orange-400">+{profit}</p>
               </div>
             </div>
             <div className="flex items-center">
-              <img src="/image/dollar.png" alt="" className="w-8 h-8 ml-1 max-sm:w-6 max-sm:h-6" />
+              <img src="/image/dollar.png" alt="" className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
               <p className="text-white">{value}</p>
             </div>
           </div>

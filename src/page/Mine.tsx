@@ -130,12 +130,12 @@ function Mine() {
           </div>
           <TimeText />
           <DailyCard />
-          <div className="grid grid-cols-3 w-full py-4 gap-4">
+          <div className="grid grid-cols-3 w-full py-4 gap-2">
             <ComboCard image="/image/com_3.png" content="Top 10 pairs" />
             <ComboCard image="/image/mikeT.png" content="Security Audition" />
             <ComboCard image="/image/com_1.png" content="Licence Ethiopia" />
           </div>
-          <div className="grid grid-cols-4 gap-10 max-sm:gap-2 justify-center items-center bg-[#272A30] py-2 px-4 max-sm:px-2 rounded-xl w-full">
+          <div className="grid grid-cols-4 gap-2 md:gap-10 justify-center items-center bg-[#272A30] py-2 px-4 rounded-xl w-full">
             <div
               className={` cursor-pointer transform origin-bottom transition ${
                 tab === 1
@@ -149,7 +149,7 @@ function Mine() {
             <div
               className={`cursor-pointer transform origin-bottom transition ${
                 tab === 2
-                  ? "scale-[110%] opacity-100 bg-[#1B1F24] max-sm:p-1 p-2 rounded-lg"
+                  ? "scale-[110%] opacity-100 bg-[#1B1F24] sm:p-2 p-2 rounded-lg"
                   : "opacity-50 text-white"
               }`}
               onClick={() => setTab(2)}
