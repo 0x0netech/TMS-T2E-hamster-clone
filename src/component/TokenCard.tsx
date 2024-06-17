@@ -21,7 +21,7 @@ const TokenCard: React.FC<TokenCardProps> = ({
           />
         </div>
         <div className="w-2/3">
-          <p className="text-left text-white text-md sm:text-lg md:text-xl">
+          <p className="text-left text-white text-md sm:text-lg md:text-2xl">
             {content}
           </p>
           <p className="text-left text-gray-400 pt-2 sm:text-sm md:text-md text-[12px] lg:text-lg">
