@@ -12,22 +12,22 @@ const Airdrop = () => {
       <div className="mt-6">
         <div className="flex">
           <CheckCom flag={true} />
-          <p className="text-white text-xl">Exchange negotiations</p>
+          <p className="text-white text-xl ml-2">Exchange negotiations</p>
         </div>
         <img src="image/thredot.png" className="w-2 h-4 ml-3" />
         <div className="flex">
           <CheckCom flag={true} />
-          <p className="text-white text-xl">Market Maker negotiations</p>
+          <p className="text-white text-xl ml-2">Market Maker negotiations</p>
         </div>
         <img src="image/thredot.png" className="w-2 h-4 ml-3" />
         <div className="flex">
           <CheckCom flag={true} />
-          <p className="text-white text-xl">Key partnerships are coming</p>
+          <p className="text-white text-xl ml-2">Key partnerships are coming</p>
         </div>
         <img src="image/thredot.png" className="w-2 h-4 ml-3" />
         <div className="flex">
           <CheckCom flag={false} />
-          <p className="text-white text-xl">Airdorp task list</p>
+          <p className="text-white text-xl ml-2">Airdorp task list</p>
         </div>
       </div>
     </div>
