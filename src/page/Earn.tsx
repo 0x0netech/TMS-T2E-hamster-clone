@@ -1,7 +1,7 @@
 import EarnCard from "../component/EarnCard";
 const Earn = () => {
   return (
-    <div className="py-10 bg-black p-4 min-h-[93.2vh]">
+    <div className="py-10 bg-black p-4 pb-24">
       <div className="flex justify-center items-center">
         <img src="image/dollar.png" className="w-32 h-32" />
       </div>
@@ -71,7 +71,6 @@ const Earn = () => {
         />
         <FriendCard name="Andria" role="Platium" profit="435.3K" value="+35K" /> */}
       </div>
-      <div className="h-[150px] bg-black" />
     </div>
   );
 };

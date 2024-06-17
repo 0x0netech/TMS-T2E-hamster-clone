@@ -2,14 +2,12 @@ import InviteCard from "../component/InviteCard";
 import FriendCard from "../component/FriendCard";
 const Friends = () => {
   return (
-    <div className="py-10 bg-black p-4 min-h-[100vh]">
-      <p className="text-white text-4xl font-bold">
-        Invite Friends!
-      </p>
+    <div className=" bg-black px-4 pb-24">
+      <p className="text-white text-4xl font-bold">Invite Friends!</p>
       <p className="text-white text-xl pt-4 pb-6">
         You and your friend will receive bonuses!
       </p>
-      <div className=" space-y-2 py-3">
+      <div className="space-y-2 py-3">
         <InviteCard title="Invite a friend" profit="343,3432" />
         <InviteCard
           title="Invite a friend with Telegram Preminum"
@@ -58,7 +56,6 @@ const Friends = () => {
         />
         <FriendCard name="Andria" role="Platium" profit="435.3K" value="+35K" />
       </div>
-      <div className="h-[150px] bg-black" />
     </div>
   );
 };

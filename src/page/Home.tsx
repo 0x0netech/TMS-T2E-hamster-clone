@@ -109,7 +109,7 @@ function Home() {
   console.log("imgStatus", imgStatus);
 
   return (
-    <div className=" mt-12 px-4">
+    <div className="mt-12 pb-24 px-4">
       <ToastContainer />
       <AnaylsisCard />
       <div
@@ -171,7 +171,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[150px] bg-[#1B1F24]" />
     </div>
   );
 }

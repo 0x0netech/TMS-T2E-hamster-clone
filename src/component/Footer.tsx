@@ -9,13 +9,13 @@ export default function Footer() {
     setPath(location.pathname);
   }, [location]);
   return (
-    <div className="w-full fixed mt-[89vh] px-4 max-w-[700px] lg:mt-[85vh] z-50">
-      <div className="grid grid-cols-5 gap-1 px-3 lg:gap-5 justify-center items-center bg-[#272A30] pt-3 pb-2 lg:px-4 rounded-3xl w-full border-slate-950 border-2">
+    <div className="w-full fixed bottom-2 px-2 max-w-[700px] z-50">
+      <div className="grid grid-cols-5 gap-1 px-3 lg:gap-5 justify-center items-center bg-slate-900 pt-3 pb-2 lg:px-4 rounded-3xl w-full border-slate-700 border-2">
         <Link
           to=""
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/"
-              ? "scale-[110%] opacity-100 bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100 bg-transparent p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >
@@ -30,7 +30,7 @@ export default function Footer() {
           to="/mine"
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/mine"
-              ? "scale-[110%] opacity-100 bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100 bg-transparent p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >
@@ -45,7 +45,7 @@ export default function Footer() {
           to="/friends"
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/friends"
-              ? "scale-[110%] opacity-100 bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100 bg-transparent p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >
@@ -60,7 +60,7 @@ export default function Footer() {
           to="/earn"
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/earn"
-              ? "scale-[110%] opacity-100  bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100  bg-transparent p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >
@@ -75,7 +75,7 @@ export default function Footer() {
           to="/airdrop"
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
             path === "/airdrop"
-              ? "scale-[110%] opacity-100  bg-[#1B1F24] p-1 lg:p-2 rounded-2xl"
+              ? "scale-[110%] opacity-100  bg-transparent p-1 lg:p-2 rounded-2xl"
               : "opacity-50 text-white"
           }`}
         >

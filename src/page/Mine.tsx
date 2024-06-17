@@ -114,14 +114,14 @@ function Mine() {
   // console.log("imgStatus", imgStatus);
   const [tab, setTab] = useState<number>(1);
   return (
-    <div className=" mt-12 px-4">
+    <div className="mt-12 px-4 pb-24">
       <ToastContainer />
       <AnaylsisCard />
       <div
         id="mainWindow"
         className="relative mt-2 flex flex-col items-center justify-center w-full"
       >
-        <div className="flex flex-col justify-center items-center mb-7 gap-2 w-full">
+        <div className="flex flex-col justify-center items-center gap-2 w-full">
           <div className="flex flex-row justify-center items-center mt-4">
             <img src="/image/dollar.png" alt="" className="w-14 h-14 mt-1" />
             <h1 className="text-5xl text-white ml-3 font-bold">
@@ -130,7 +130,7 @@ function Mine() {
           </div>
           <TimeText />
           <DailyCard />
-          <div className="grid grid-cols-3 w-full py-4 gap-2">
+          <div className="grid grid-cols-3 w-full pt-4 gap-2">
             <ComboCard image="/image/com_3.png" content="Top 10 pairs" />
             <ComboCard image="/image/mikeT.png" content="Security Audition" />
             <ComboCard image="/image/com_1.png" content="Licence Ethiopia" />
@@ -221,7 +221,6 @@ function Mine() {
           </div>
         </div> */}
       </div>
-      <div className="h-[150px] bg-[#1B1F24]" />
     </div>
   );
 }
