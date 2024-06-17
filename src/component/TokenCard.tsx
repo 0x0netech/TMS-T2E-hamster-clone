@@ -11,18 +11,14 @@ const TokenCard: React.FC<TokenCardProps> = ({
   revune,
 }) => {
   return (
-    <div className="w-full rounded-3xl transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0 -8px 0px 0px #2196f3] bg-[#272A30] py-2">
-      <div className="flex grid-cols-2 px-2 max-[400px]:px-1">
-        <div className="mx-auto my-auto">
-          <img
-            src={image}
-            alt="iamge"
-            className="w-[70px] h-[60px] max-[400px]:w-16 max-[400px]:h-12"
-          />
+    <div className="w-full rounded-3xl transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0 -8px 0px 0px #2196f3] bg-[#272A30] px-1 py-2 sm:py-3">
+      <div className="flex grid-cols-2">
+        <div className="w-16 sm:w-18  mx-auto my-auto">
+          <img src={image} alt="iamge" className="w-14 h-12 sm:w-18 sm:h-18" />
         </div>
-        <div className="w-full pl-2 sm:pl-4">
-          <p className="text-left text-white">{content}</p>
-          <p className="text-left text-gray-400 pt-2 text-sm max-[400px]:text-[12px]">
+        <div className="w-full pl-1 md:pl-2">
+          <p className="text-left text-white text-md sm:text-lg">{content}</p>
+          <p className="text-left text-gray-400 pt-2 sm:text-sm md:text-md text-[12px]">
             Profile per hour
           </p>
           <div className="flex pt-2 max-[400px]:pt-0 items-center">
@@ -35,10 +31,10 @@ const TokenCard: React.FC<TokenCardProps> = ({
           </div>
         </div>
       </div>
-      <div className="flex h-[3px] bg-slate-700 shadow-md rounded-md mx-auto my-auto mt-1">
+      <div className="flex h-[3px] bg-slate-700 shadow-md rounded-md mx-auto my-auto mt-1 sm:mt-2">
         <div className="flex h-[2px] bg-slate-800 shadow-xl w-full" />
       </div>
-      <div className="flex flex-row mt-2 max-[400px]:mt-1 divide-x divide-gray-700">
+      <div className="flex flex-row sm:mt-2 mt-1 divide-x divide-gray-700">
         <div className="w-1/4">
           <p className="text-white items-center">|v|</p>
         </div>

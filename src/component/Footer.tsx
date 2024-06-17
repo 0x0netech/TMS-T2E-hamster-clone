@@ -10,7 +10,7 @@ export default function Footer() {
   }, [location]);
   return (
     <div className="w-full fixed mt-[88vh] px-4 max-w-[700px] lg:mt-[85vh] z-50">
-      <div className="grid grid-cols-5 gap-1 lg:gap-5 justify-center items-center bg-[#272A30] p-3 lg:p-4 rounded-3xl w-full border-slate-950 border-2">
+      <div className="grid grid-cols-5 gap-1 px-3 lg:gap-5 justify-center items-center bg-[#272A30] pt-3 pb-2 lg:px-4 rounded-3xl w-full border-slate-950 border-2">
         <Link
           to=""
           className={`flex flex-col items-center justify-center cursor-pointer transform origin-bottom transition ${
