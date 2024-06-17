@@ -70,8 +70,8 @@ function Home() {
   };
 
   useEffect(() => {
-    const webapp = (window as any).Telegram?.WebApp.initDataUnsafe;
-    console.log("=========>webapp", webapp);
+    // const webapp = (window as any).Telegram?.WebApp.initDataUnsafe;
+    // console.log("=========>webapp", webapp);
     const interval = setInterval(() => {
       setRemainedEnergy((pre) =>
         pre == 999 ? 1000 : pre < 1000 ? pre + 1 : 1000
@@ -133,7 +133,7 @@ function Home() {
         </div>
         <div>
           <div
-            className={`relative bg-[url('/image/mikeToken.png')] rounded-full bg-cover w-[340px] h-[340px] max-sm:w-[250px] max-sm:h-[250px] z-10 ${
+            className={`relative bg-[url('/image/mikeToken.png')] rounded-full bg-cover w-[340px] h-[340px] sm:w-[390px] sm:h-[390px] md:w-[460px] md:h-[460px] lg:w-[550px] lg:h-[550px] z-10 ${
               remainedEnergy > 0
                 ? "cursor-pointer"
                 : "cursor-not-allowed opacity-50"
