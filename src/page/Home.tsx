@@ -118,8 +118,12 @@ function Home() {
       >
         <div className="flex flex-col justify-center items-center mb-7 gap-2 w-full">
           <div className="flex flex-row justify-center items-center mt-4">
-            <img src="/image/dollar.png" alt="" className="w-14 h-14 mt-1" />
-            <h1 className="text-5xl text-white ml-3 font-bold">
+            <img
+              src="/image/dollar.png"
+              alt=""
+              className="w-14 h-14 mt-1 max-sm:w-10 max-sm:h-10"
+            />
+            <h1 className="text-5xl text-white ml-3 font-bold max-sm:text-3xl">
               {formatNumberWithCommas(token)}
             </h1>
           </div>
@@ -129,7 +133,7 @@ function Home() {
         </div>
         <div>
           <div
-            className={`relative bg-[url('/image/mikeToken.png')] rounded-full bg-cover w-[400px] h-[400px] max-sm:w-[330px] max-sm:h-[330px] z-10 ${
+            className={`relative bg-[url('/image/mikeToken.png')] rounded-full bg-cover w-[340px] h-[340px] max-sm:w-[250px] max-sm:h-[250px] z-10 ${
               remainedEnergy > 0
                 ? "cursor-pointer"
                 : "cursor-not-allowed opacity-50"
@@ -140,27 +144,28 @@ function Home() {
             onClick={handleTap}
           />
         </div>
-        <div className="flex flex-row justify-between w-full px-10">
+        <div className="flex flex-row justify-between w-full px-10 max-sm:px-4">
           <div className="flex justify-between gap-5 w-full">
             <h3 className="text-2xl mb-2 text-white flex flex-row">
-              <span className="text-3xl ">
+              <span className="flex text-3xl items-center ">
                 <img
                   src="/image/icon/lightning.svg"
                   alt="lightning"
-                  className="w-6 h-6 inline"
+                  className="w-6 h-6 inline mt-1"
                 />
               </span>
-              <span className="text-2xl text-white">{remainedEnergy}</span>{" "}
-              /1000
+              <span className="text-2xl text-white max-sm:text-lg">
+                {remainedEnergy}/1000
+              </span>
             </h3>
-            <div className="flex justify-center align-middle">
+            <div className="flex justify-center items-center">
               <Link to="/boost" className="flex">
                 <img
                   src="/image/rocket.png"
                   alt="rocket"
-                  className="w-8 h-8 inline"
+                  className="w-8 h-8 inline max-sm:w-6 max-sm:h-6"
                 />
-                <h3 className="text-2xl text-white">Boost</h3>
+                <h3 className="text-2xl max-sm:text-lg text-white">Boost</h3>
               </Link>
             </div>
           </div>
