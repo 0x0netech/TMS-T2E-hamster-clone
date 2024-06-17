@@ -29,7 +29,7 @@ function App() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="App flex flex-col justify-between w-[700px] max-sm:w-[750px] bg-[#1B1F24]">
+        <div className="App flex flex-col justify-between w-[700px] max-sm:w-[750px] bg-[#1B1F24] scroll-auto">
           <ReduxProvider store={store}>
             <Routes>
               <Route path="/" element={<Layout />}>
@@ -46,6 +46,7 @@ function App() {
             <ToastContainer />
             <Footer />
           </ReduxProvider>
+          <div className="h-[50px] w-full"></div>
         </div>
       )}
     </Router>

@@ -28,6 +28,30 @@ const Markets = () => {
           value="10.1k"
           revune="716"
         />
+        <TokenCard
+          image="/image/staking.png"
+          content="Staking"
+          value="10.1k"
+          revune="212.23k"
+        />
+        <TokenCard
+          image="/image/btc.png"
+          content="BTC pairs"
+          value="64.1k"
+          revune="453"
+        />
+        <TokenCard
+          image="/image/eth.png"
+          content="ETH pairs"
+          value="10.1k"
+          revune="716"
+        />
+        <TokenCard
+          image="/image/eth.png"
+          content="ETH pairs"
+          value="10.1k"
+          revune="716"
+        />
       </div>
     </>
   );

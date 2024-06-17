@@ -1,7 +1,7 @@
 import EarnCard from "../component/EarnCard";
 const Earn = () => {
   return (
-    <div className="py-10 bg-black p-4 h-[93.3vh]">
+    <div className="py-10 bg-black p-4 min-h-[93.2vh]">
       <div className="flex justify-center items-center">
         <img src="image/dollar.png" className="w-32 h-32" />
       </div>
@@ -21,6 +21,18 @@ const Earn = () => {
         </p>
       </div>
       <div className="mt-3 space-y-2">
+        <EarnCard
+          title="Join our TG channel"
+          image="image/tg.png"
+          profit="234.3K"
+          flag={true}
+        />
+        <EarnCard
+          title="Get exclusive listing info"
+          image="image/youtube.png"
+          profit="5000"
+          flag={true}
+        />
         <EarnCard
           title="Join our TG channel"
           image="image/tg.png"
