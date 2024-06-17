@@ -12,13 +12,19 @@ const TokenCard: React.FC<TokenCardProps> = ({
 }) => {
   return (
     <div className="w-full rounded-3xl transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0 -8px 0px 0px #2196f3] bg-[#272A30] px-1 py-2 sm:py-3">
-      <div className="flex grid-cols-2">
-        <div className="w-16 sm:w-18  mx-auto my-auto">
-          <img src={image} alt="iamge" className="w-14 h-12 sm:w-18 sm:h-18" />
+      <div className="flex">
+        <div className="flex mx-auto my-auto">
+          <img
+            src={image}
+            alt="iamge"
+            className="w-14 h-14 sm:w-14 sm:h-14 lg:w-20 lg:h-20"
+          />
         </div>
-        <div className="w-full pl-1 md:pl-2">
-          <p className="text-left text-white text-md sm:text-lg">{content}</p>
-          <p className="text-left text-gray-400 pt-2 sm:text-sm md:text-md text-[12px]">
+        <div className="w-2/3">
+          <p className="text-left text-white text-md sm:text-lg md:text-xl">
+            {content}
+          </p>
+          <p className="text-left text-gray-400 pt-2 sm:text-sm md:text-md text-[12px] lg:text-lg">
             Profile per hour
           </p>
           <div className="flex pt-2 max-[400px]:pt-0 items-center">
