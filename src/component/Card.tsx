@@ -10,10 +10,8 @@ interface ExpCardProps {
 const ExpCard: React.FC<ExpCardProps> = ({ earn, profit, flag }) => {
   return (
     <div className="grid grid-col-2 w-1/3  grid-col-1 px-[2px]">
-      <div className="group w-full rounded-lg bg-[#272A30] py-2 transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0 -8px 0px 0px #2196f3]">
-        <p className="text-sm md:text-lg text-[#F39E09]">
-          {earn}
-        </p>
+      <div className="group w-full rounded-lg bg-[#272A30] py-2 sm:py-4 lg:py-6 transition relative duration-300 cursor-pointer hover:translate-y-[3px] hover:shadow-[0 -8px 0px 0px #2196f3]">
+        <p className="text-sm md:text-lg lg:text-xl text-[#F39E09]">{earn}</p>
         <div className="flex flex-row justify-center align-middle pt-2">
           <p className="text-white text-2xl">
             {flag ? (
@@ -26,7 +24,7 @@ const ExpCard: React.FC<ExpCardProps> = ({ earn, profit, flag }) => {
               <></>
             )}
           </p>
-          <p className="text-white max-sm:text-[12px] text-md">
+          <p className="text-white text-[12px] sm:text-sm md:text-md">
             &nbsp;{profit}
           </p>
         </div>
