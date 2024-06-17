@@ -22,7 +22,7 @@ const Airdrop = () => {
         <img src="image/thredot.png" className="w-2 h-4 ml-3" />
         <div className="flex">
           <CheckCom flag={true} />
-          <p className="text-white text-xl ml-2">Key partnerships are coming</p>
+          <p className="text-white text-xl ml-2 text-left">Key partnerships are coming</p>
         </div>
         <img src="image/thredot.png" className="w-2 h-4 ml-3" />
         <div className="flex">
