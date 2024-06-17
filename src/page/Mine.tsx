@@ -221,7 +221,7 @@ function Mine() {
           </div>
         </div> */}
       </div>
-      
+      <div className="h-[55px] md:h-[70px] w-full"></div>
     </div>
   );
 }

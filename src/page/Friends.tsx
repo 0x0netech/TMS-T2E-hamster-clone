@@ -2,7 +2,7 @@ import InviteCard from "../component/InviteCard";
 import FriendCard from "../component/FriendCard";
 const Friends = () => {
   return (
-    <div className="py-10 bg-black p-4 min-h-[93.4vh] md:min-h-[91.8vh]">
+    <div className="py-10 bg-black p-4 min-h-[100vh]">
       <p className="text-white text-3xl font-bold">Invite Friends!</p>
       <p className="text-white text-xl pt-4 pb-6">
         You and your friend will receive bonuses!
@@ -54,6 +54,7 @@ const Friends = () => {
         />
         <FriendCard name="Andria" role="Platium" profit="435.3K" value="+35K" />
       </div>
+      <div className="h-[55px] md:h-[70px] w-full bg-black"></div>
     </div>
   );
 };

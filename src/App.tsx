@@ -44,9 +44,8 @@ function App() {
               </Route>
             </Routes>
             <ToastContainer />
-            <Footer />
+              <Footer />
           </ReduxProvider>
-          <div className="h-[80px] w-full"></div>
         </div>
       )}
     </Router>
