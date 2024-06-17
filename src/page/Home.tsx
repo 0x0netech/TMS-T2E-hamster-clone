@@ -144,7 +144,7 @@ function Home() {
             onClick={handleTap}
           />
         </div>
-        <div className="flex flex-row justify-between w-full px-10 max-sm:px-4">
+        <div className="flex flex-row justify-between w-full px-10 max-sm:px-4 mt-4">
           <div className="flex justify-between gap-5 w-full">
             <h3 className="text-2xl mb-2 text-white flex flex-row">
               <span className="flex text-3xl items-center ">

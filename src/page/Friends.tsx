@@ -21,7 +21,7 @@ const Friends = () => {
         <p className="text-left py-2 text-white text-xl font-semibold">
           List of your friends(15)
         </p>
-        <img src="/image/redo.png" alt="" className="w-8 h-8" />
+        <img src="/image/redo.png" alt="" className="w-8 h-8 max-sm:w-4 max-sm:h-4 mt-1" />
       </div>
       <div className="mt-3 space-y-2">
         <FriendCard
