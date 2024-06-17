@@ -24,7 +24,7 @@ const Friends = () => {
         <img
           src="/image/redo.png"
           alt=""
-          className="w-8 h-8 max-sm:w-4 max-sm:h-4 mt-1"
+          className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 mt-1"
         />
       </div>
       <div className="mt-3 space-y-2">
