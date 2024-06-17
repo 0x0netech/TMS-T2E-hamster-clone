@@ -221,6 +221,7 @@ function Mine() {
           </div>
         </div> */}
       </div>
+      <div className="h-[150px] bg-[#1B1F24]" />
     </div>
   );
 }

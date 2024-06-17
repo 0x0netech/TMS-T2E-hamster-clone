@@ -1,7 +1,7 @@
 import CheckCom from "../component/check";
 const Airdrop = () => {
   return (
-    <div className="py-10 bg-black p-4 min-h-[93vh]">
+    <div className="py-10 bg-black p-4 h-[100vh]">
       <div className="flex justify-center items-center">
         <img src="image/hamstercoin.png" className="w-34 h-32" />
       </div>

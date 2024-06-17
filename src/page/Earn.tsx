@@ -71,6 +71,7 @@ const Earn = () => {
         />
         <FriendCard name="Andria" role="Platium" profit="435.3K" value="+35K" /> */}
       </div>
+      <div className="h-[150px] bg-black" />
     </div>
   );
 };
