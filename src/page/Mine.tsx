@@ -33,7 +33,7 @@ function Mine() {
             <ComboCard image="/image/mikeT.png" content="Security Audition" />
             <ComboCard image="/image/com_1.png" content="Licence Ethiopia" />
           </div>
-          <div className="grid grid-cols-4 gap-2 md:gap-10 justify-center items-center bg-[#272A30] py-2 px-4 rounded-xl w-full sticky top-2 z-50 border-gray-900 border-2">
+          <div className="grid grid-cols-4 gap-2 md:gap-10 justify-center items-center bg-[#272A30] py-2 px-4 rounded-xl w-full sticky top-2 z-50 border-[#1B1F24] border-2">
             <div
               className={` cursor-pointer transform origin-bottom transition ${
                 tab === 1
