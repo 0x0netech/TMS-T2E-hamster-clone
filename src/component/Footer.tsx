@@ -9,7 +9,7 @@ export default function Footer() {
     setPath(location.pathname);
   }, [location]);
   return (
-    <div className="w-full fixed bottom-1 px-2 max-w-[700px] z-50">
+    <div className="w-full fixed bottom-[2px] px-2 max-w-[700px] z-50">
       <div className="grid grid-cols-5 gap-1 px-3 lg:gap-5 justify-center items-center bg-[#272A30] pt-3 pb-2 lg:px-4 rounded-3xl w-full border-slate-700 border-2">
         <Link
           to=""
