@@ -6,7 +6,7 @@ const Airdrop = () => {
         <div className="flex justify-center items-center">
           <img src="image/hamstercoin.png" className="w-34 h-32" />
         </div>
-        <p className="text-white text-4xl font-bold p-4">
+        <p className="text-white text-3xl font-bold p-2">
           Get ready, Airdrop is
           <br /> coming soon!
         </p>
